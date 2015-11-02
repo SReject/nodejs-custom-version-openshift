@@ -42,7 +42,7 @@ Create a namespace, if you haven't already do so
 
     rhc domain create <yournamespace>
 
-Create a nodejs application (you can name it anything via -a)
+Create a nodejs application
 
     rhc app create nodeapp nodejs --from-code=https://github.com/LouisT/nodejs-custom-version-openshift.git
 
