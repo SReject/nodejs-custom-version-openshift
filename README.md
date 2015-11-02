@@ -44,13 +44,7 @@ Create a namespace, if you haven't already do so
 
 Create a nodejs application (you can name it anything via -a)
 
-    rhc app create -a palinode  -t nodejs-0.10
-
-Add this `github nodejs-custom-version-openshift` repository
-
-    cd palinode
-    git remote add upstream -m master git://github.com/ramr/nodejs-custom-version-openshift.git
-    git pull -s recursive -X theirs upstream master
+    rhc app create nodeapp nodejs --from-code=https://github.com/LouisT/nodejs-custom-version-openshift.git
 
 Optionally, specify the custom version of Node.js you want to run with
 (Default is v0.12.5).
